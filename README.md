@@ -9,7 +9,7 @@
 
 **A privacy-focused tool to securely view and manage your ChatGPT conversation exports. Take control of your data with an intuitive interface that replicates the original ChatGPT experience.**
 
-![Preview](screenshots\app-preview.png)
+![Preview](screenshots/app-preview.png)
 
 ## 🌟 Key Features
 
@@ -59,7 +59,7 @@ No installation required! This is a standalone HTML application:
 
 | Conversation View | Media Support | Search Interface |
 |-------------------|----------------|------------------|
-| [![Conversation View](screenshots/conversation-view.png)](screenshots/conversation-view.png) | [![Media Support](screenshots\media-location-reference-support.png)](screenshots\media-location-reference-support.png) | [![Search Interface](screenshots\search-interface.png)](screenshots\search-interface.png) |
+| [![Conversation View](screenshots/conversation-view.png)](screenshots/conversation-view.png) | [![Media Support](screenshots/media-location-reference-support.png)](screenshots/media-location-reference-support.png) | [![Search Interface](screenshots/search-interface.png)](screenshots/search-interface.png) |
 
 ## 🔍 Troubleshooting
 
