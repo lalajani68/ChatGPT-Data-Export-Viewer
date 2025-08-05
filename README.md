@@ -11,6 +11,18 @@
 
 ![Preview](screenshots/app-preview.png)
 
+## 🔒 Why This Tool Exists
+
+In recent months, growing concerns have emerged about the privacy and security of ChatGPT conversations. Reports surfaced that private ChatGPT conversations were being indexed by Google search engines, potentially exposing sensitive personal information to the public ([Search Engine Land](https://searchengineland.com/chatgpt-kills-google-indexable-chats-459874), [Dev.to](https://dev.to/alifar/exposed-google-is-indexing-private-ai-conversations-heres-what-you-should-know-37m5)). This revelation highlighted a critical vulnerability in how our AI conversations are stored and protected.
+
+I created this tool to empower users to take control of their ChatGPT data. By providing a secure, offline method to view and manage conversation exports, this application enables you to:
+- Safely archive your conversations without relying on cloud storage
+- Review your chat history in a user-friendly interface
+- Make informed decisions about which conversations to keep or delete
+- Maintain your privacy while preserving access to your valuable AI interactions
+
+Once you've exported and reviewed your conversations using this tool, you can confidently delete sensitive data from ChatGPT's servers, knowing you've maintained a local copy of what's important to you.
+
 ## 🌟 Key Features
 
 - 🔒 **Privacy-First**: View your conversations locally without uploading to external servers
@@ -28,23 +40,24 @@
 - Modern web browser (Chrome, Firefox, Edge, Safari)
 - ChatGPT conversation export (ZIP file)
 
-### Step-by-Step Guide
+### 🔴 CRITICAL STEPS BEFORE USING THIS TOOL
 
-1. **Export Your Data from ChatGPT**
-   - Go to ChatGPT Settings > Data controls > Export
-   - Wait for the email with your download link
+#### 1. Export Your Data from ChatGPT
+- Go to ChatGPT Settings > Data controls > Export
+- Wait for the email with your download link
 
-2. **Prepare Your Export File (Critical Step)**
-   - Download the ZIP file from the email
-   - Extract the ZIP to a folder (ignore extraction errors)
-   - Recompress the contents into a new ZIP file
-   - Rename it simply (e.g., `my-chats.zip`)
+#### 2. Prepare Your Export File (ESSENTIAL STEP)
+- Download the ZIP file from the email
+- Extract the ZIP to a folder (ignore extraction errors)
+- Recompress the contents into a new ZIP file
+- Rename it simply (e.g., `my-chats.zip`)
 
-3. **View Your Conversations**
-   - Open `index.html` in your browser
-   - Drag your prepared ZIP file onto the upload area
-   - Browse conversations using the sidebar
-   - Search and filter your chat history
+#### 3. View Your Conversations
+- **Option A (Local)**: Open `index.html` in your browser
+- **Option B (Online)**: Visit [https://lalajani68.github.io/ChatGPT-Data-Export-Viewer/](https://lalajani68.github.io/ChatGPT-Data-Export-Viewer/)
+- Drag your prepared ZIP file onto the upload area
+- Browse conversations using the sidebar
+- Search and filter your chat history
 
 ## 🔧 Installation
 
@@ -102,6 +115,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - Project Link: [https://github.com/lalajani68/ChatGPT-Data-Export-Viewer](https://github.com/lalajani68/ChatGPT-Data-Export-Viewer)
+- Online Version: [https://lalajani68.github.io/ChatGPT-Data-Export-Viewer/](https://lalajani68.github.io/ChatGPT-Data-Export-Viewer/)
 - Issues: [https://github.com/lalajani68/ChatGPT-Data-Export-Viewer/issues](https://github.com/lalajani68/ChatGPT-Data-Export-Viewer/issues)
 - Dev Email: lalagani68 [at] gmail.com
 
