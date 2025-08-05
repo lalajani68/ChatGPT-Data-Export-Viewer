@@ -23,6 +23,8 @@ I created this tool to empower users to take control of their ChatGPT data. By p
 
 Once you've exported and reviewed your conversations using this tool, you can confidently delete sensitive data from ChatGPT's servers, knowing you've maintained a local copy of what's important to you.
 
+## Preview:
+
 ![Preview](screenshots/app-preview.png)
 
 ## 🌟 Key Features
