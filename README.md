@@ -9,7 +9,7 @@
 
 **A privacy-focused tool to securely view and manage your ChatGPT conversation exports. Take control of your data with an intuitive interface that replicates the original ChatGPT experience.**
 
-![Preview](https://via.placeholder.com/800x450?text=App+Preview+Image)
+![Preview](screenshots\app-preview.png)
 
 ## 🌟 Key Features
 
@@ -59,7 +59,7 @@ No installation required! This is a standalone HTML application:
 
 | Conversation View | Media Support | Search Interface |
 |-------------------|----------------|------------------|
-| ![Conversation View](https://via.placeholder.com/300x200?text=Conversation+View) | ![Media Support](https://via.placeholder.com/300x200?text=Media+Support) | ![Search Interface](https://via.placeholder.com/300x200?text=Search+Interface) |
+| [![Conversation View](screenshots/conversation-view.png)](screenshots/conversation-view.png) | [![Media Support](screenshots\media-location-reference-support.png)](screenshots\media-location-reference-support.png) | [![Search Interface](screenshots\search-interface.png)](screenshots\search-interface.png) |
 
 ## 🔍 Troubleshooting
 
@@ -103,6 +103,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Project Link: [https://github.com/lalajani68/ChatGPT-Data-Export-Viewer](https://github.com/lalajani68/ChatGPT-Data-Export-Viewer)
 - Issues: [https://github.com/lalajani68/ChatGPT-Data-Export-Viewer/issues](https://github.com/lalajani68/ChatGPT-Data-Export-Viewer/issues)
+- Dev Email: lalagani68 [at] gmail.com
 
 ---
 
