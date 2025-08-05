@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Data Export Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Toggle Button for Mobile -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <span class="sidebar-logo-text">ChatGPT Data Viewer</span>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search conversations...">
+                </div>
+            </div>
+            <div class="conversations-list" id="conversationsList">
+                <!-- Conversations will be loaded here -->
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Upload Screen -->
+            <div class="upload-container" id="uploadContainer">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <h2 class="upload-title">Upload ChatGPT Export</h2>
+                    <p class="upload-description">
+                        Drag and drop your ChatGPT export ZIP file here or click to browse. 
+                        The file should contain your conversations, images, and other data.
+                    </p>
+                    <button class="upload-button" id="uploadButton">Browse Files</button>
+                    <input type="file" class="file-input" id="fileInput" accept=".zip">
+                    
+                    <!-- Remembered File Section -->
+                    <div id="rememberedFileContainer" class="remembered-file-container" style="display: none;">
+                        <div class="remembered-file-header">
+                            <div class="remembered-file-title">
+                                <i class="fas fa-history"></i>
+                                <span>Previously Loaded File</span>
+                            </div>
+                            <div class="remembered-file-actions">
+                                <button id="clearRememberedFileBtn" class="remembered-file-button remembered-file-button-secondary">
+                                    <i class="fas fa-times"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                        <div class="remembered-file-info" id="rememberedFileInfo">
+                            <!-- File info will be displayed here -->
+                        </div>
+                        <button id="loadRememberedFileBtn" class="remembered-file-button">
+                            <i class="fas fa-sync-alt"></i> Load This File
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Loading Screen -->
+            <div class="loading-container" id="loadingContainer">
+                <div class="loading-spinner"></div>
+                <p class="loading-text" id="loadingText">Processing your ChatGPT data...</p>
+                <div class="loading-progress">
+                    <div class="loading-progress-bar" id="loadingProgressBar"></div>
+                </div>
+            </div>
+            <!-- Error Screen -->
+            <div class="error-container" id="errorContainer">
+                <i class="fas fa-exclamation-triangle error-icon"></i>
+                <h2 class="error-title" id="errorTitle">Error Processing File</h2>
+                <p class="error-description" id="errorDescription">
+                    There was an error processing your ChatGPT export file.
+                </p>
+                
+                <div class="error-solutions" id="errorSolutions" style="display: none;">
+                    <h3 class="error-solutions-title">Possible Solutions:</h3>
+                    <ul class="error-solutions-list" id="solutionsList">
+                        <!-- Solutions will be added dynamically -->
+                    </ul>
+                </div>
+                
+                <div class="repair-section" id="repairSection" style="display: none;">
+                    <h3 class="repair-title">Try to Repair the ZIP File</h3>
+                    <p>This tool will attempt to recover as much data as possible from the corrupted ZIP file. Note that this may not recover all data.</p>
+                    <button class="repair-button" id="repairButton">Attempt Repair</button>
+                </div>
+                
+                <div class="error-details" id="errorDetails"></div>
+                <div>
+                    <button class="retry-button" id="retryButton">Try Again</button>
+                    <button class="back-button" id="backButton">Back to Upload</button>
+                </div>
+            </div>
+            <!-- Chat Header (hidden by default) -->
+            <div class="chat-header" id="chatHeader" style="display: none;">
+                <h2 class="chat-title" id="chatTitle">Select a conversation</h2>
+                <div class="chat-actions">
+                    <button class="action-btn" id="refreshBtn" title="Refresh">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button class="action-btn" id="downloadBtn" title="Download">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Messages Container -->
+            <div class="messages-container" id="messagesContainer">
+                <div class="empty-state" id="emptyState">
+                    <i class="fas fa-comments empty-icon"></i>
+                    <h3 class="empty-title">No Conversation Selected</h3>
+                    <p class="empty-description">Select a conversation from the sidebar to view it here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <span class="image-modal-close" id="imageModalClose">&times;</span>
+        <img id="imageModalContent" src="" alt="">
+    </div>
+    <!-- Debug Panel -->
+    <button class="debug-toggle" id="debugToggle">
+        <i class="fas fa-bug"></i>
+    </button>
+    <div class="debug-panel" id="debugPanel"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
