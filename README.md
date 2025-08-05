@@ -9,8 +9,6 @@
 
 **A privacy-focused tool to securely view and manage your ChatGPT conversation exports. Take control of your data with an intuitive interface that replicates the original ChatGPT experience.**
 
-![Preview](screenshots/app-preview.png)
-
 ## 🔒 Why This Tool Exists
 
 In recent months, growing concerns have emerged about the privacy and security of ChatGPT conversations. Reports surfaced that private ChatGPT conversations were being indexed by Google search engines, potentially exposing sensitive personal information to the public ([Search Engine Land](https://searchengineland.com/chatgpt-kills-google-indexable-chats-459874), [Dev.to](https://dev.to/alifar/exposed-google-is-indexing-private-ai-conversations-heres-what-you-should-know-37m5)). This revelation highlighted a critical vulnerability in how our AI conversations are stored and protected.
@@ -24,6 +22,8 @@ I created this tool to empower users to take control of their ChatGPT data. By p
 - Maintain your privacy while preserving access to your valuable AI interactions
 
 Once you've exported and reviewed your conversations using this tool, you can confidently delete sensitive data from ChatGPT's servers, knowing you've maintained a local copy of what's important to you.
+
+![Preview](screenshots/app-preview.png)
 
 ## 🌟 Key Features
 
