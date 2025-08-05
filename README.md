@@ -15,6 +15,8 @@
 
 In recent months, growing concerns have emerged about the privacy and security of ChatGPT conversations. Reports surfaced that private ChatGPT conversations were being indexed by Google search engines, potentially exposing sensitive personal information to the public ([Search Engine Land](https://searchengineland.com/chatgpt-kills-google-indexable-chats-459874), [Dev.to](https://dev.to/alifar/exposed-google-is-indexing-private-ai-conversations-heres-what-you-should-know-37m5)). This revelation highlighted a critical vulnerability in how our AI conversations are stored and protected.
 
+Adding to these concerns, OpenAI CEO Sam Altman has explicitly warned that ChatGPT conversations lack legal confidentiality protections, stating that conversations could potentially be used in court unlike communications with lawyers or therapists ([TechCrunch](https://techcrunch.com/2025/07/25/sam-altman-warns-theres-no-legal-confidentiality-when-using-chatgpt-as-a-therapist/), [Benzinga](https://www.benzinga.com/markets/tech/25/07/46744816/sam-altman-warns-chatgpt-conversations-arent-protected-like-talking-with-your-psychologist-or-lawyer-we-could-be-required-to-produce-that-in-court)).
+
 I created this tool to empower users to take control of their ChatGPT data. By providing a secure, offline method to view and manage conversation exports, this application enables you to:
 - Safely archive your conversations without relying on cloud storage
 - Review your chat history in a user-friendly interface
